@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+.mbti {
+    font-family: 'Rocher';
+    text-align: center;
+    font-size: 25px;
+    height: 40px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    padding: 0px 15px;
+    font-palette: --Blues;
+    border-radius: 50%;
+    background-color: #6495ED;
+    color: white;
+}
+
+@font-palette-values --Blue {
+    font-family: Rocher;
+    base-palette: 9;
+}

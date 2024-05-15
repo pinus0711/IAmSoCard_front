@@ -1,0 +1,94 @@
+.CardItemInfo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.CardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    margin: auto;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.ProductBox {
+    width: 15rem;
+    aspect-ratio: 3/4;
+    border-radius: 3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 60rem) {
+        min-width: 13rem;
+        width: 40%;
+    }
+
+    @media screen and (max-width: 37.5rem) {
+        min-width: 13rem;
+        width: 80%;
+    }
+}
+
+.CardImage {
+    width: 10rem;
+}
+
+.CardContent {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.CardBenefitDetail {
+    text-align: left;
+    color: gray;
+}
+
+.CardOverlay {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: white;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    transition: all .4s;
+    transform: translateY(2.5rem);
+    border: 1px solid rgb(165, 165, 165);
+
+    & h1 {
+        font-size: 2.3rem;
+        margin: 2rem 0 1.3rem 0;
+    }
+
+    & h3 {
+        margin: 0 0 0.6rem 0.2rem;
+    }
+
+    & hr {
+        border-color: #071F60;
+        width: 100%;
+    }
+
+    & p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
+    &:hover {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+
+}

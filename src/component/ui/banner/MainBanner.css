@@ -1,0 +1,44 @@
+.mbtiContainer {
+    /* height: max-content; */
+    /*position: relative;*/
+    /* width: 700px; */
+    /* height: 350px; */
+}
+
+div.img {
+    flex: auto;
+    justify-content: center;
+    border: 1px solid blue;
+    height: 500px;
+    background-image: url('public/mbti_banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.mbtiTestbtn {
+    position: absolute;
+    right: 10px;
+    bottom: 35px;
+    color: #ffffff;
+    background-color: #3b82f6;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.mbtiTestbtn:hover {
+    background-color: #2563eb;
+    background-color: #1d4ed8;
+    outline: none;
+    box-shadow: 0 0 0 2px #85d7ff;
+}
+
+.mbtiTestbtn:focus {
+    box-shadow: 0 0 0 3px rgba(29, 78, 218, 0.5);
+}
