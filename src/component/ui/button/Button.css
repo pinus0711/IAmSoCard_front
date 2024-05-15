@@ -1,0 +1,37 @@
+.Button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.Button_Long{
+    color: white;
+    background: #3b8ef6;
+    width: 100%;
+
+}
+
+.Button_Short{
+    color: white;
+    background: #3b8ef6;
+    width: 70%;
+
+}
+
+.Button_default {
+    color: white;
+    background: #3b8ef6;
+}
+
+.Button_positive {
+    background: #64c964;
+    color: white;
+}
+
+.Button_negative {
+    background-color: #fd565f;
+    color: white;
+}

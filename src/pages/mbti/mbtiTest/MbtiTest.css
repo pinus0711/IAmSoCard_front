@@ -1,0 +1,294 @@
+.mbtiLayout {
+    height: 91vh;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+
+    .startPageLayout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffea35;
+        width: 50%;
+        max-width: 100%;
+        max-height: 100%;
+        color: #413730;
+
+        .startLogo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 25px;
+            font-weight: 700;
+
+            >div:nth-child(1) {
+                background-color: #413730;
+                color: #ffea35;
+                width: 100px;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+            }
+
+            >div:nth-child(2) {
+                margin-top: -15px;
+            }
+        }
+    }
+
+    .questionLayout {
+        border: 2px solid #eee;
+        display: flex;
+        flex-direction: column;
+        background-color: #bacee0;
+        width: 50%;
+        max-height: 100%;
+        overflow: hidden;
+
+        .page {
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .resultPage {
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            color: #bacee0;
+        }
+
+        .icon {
+            width: 80px;
+            display: flex;
+            margin-left: auto;
+            justify-content: space-between;
+        }
+
+        .datetime {
+            width: 150px;
+            height: 30px;
+            font-size: small;
+            border-radius: 15px;
+            background: #B1C3D5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            margin-bottom: 5px;
+
+            >* {
+                margin-left: 5px;
+            }
+        }
+
+        .mbtiTitle {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            padding: 5px 15px;
+            font-weight: 700;
+            padding-bottom: 20px;
+
+            .titleProfileImg {
+                display: flex;
+                flex-direction: column;
+                width: 40px;
+                height: 40px;
+                background-image: url('../../../assets/images/jungho.png');
+                background-size: cover;
+                border-radius: 15px;
+                margin-right: 5px;
+                align-items: center;
+                justify-content: center;
+            }
+
+            >div:nth-child(1) {
+                display: flex;
+            }
+        }
+
+        .questionList {
+            flex-direction: column;
+            height: 100%;
+            overflow: scroll;
+            scrollbar-width: none;
+
+            .questionItemLayout {
+                display: flex;
+                flex: 1;
+                max-width: 80%;
+                margin: 10px 15px 5px 15px;
+
+                .questionProfileImg {
+                    display: flex;
+                    flex-direction: column;
+                    width: 40px;
+                    height: 40px;
+                    background-image: url('../../../assets/images/jungho.png');
+                    background-size: cover;
+                    border-radius: 15px;
+                    margin-right: 5px;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .questionChatListLayout {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 80%;
+
+                    .sendName {
+                        font-size: smaller;
+                        font-weight: 600;
+                        margin: 0px 0px 0px 10px;
+                    }
+
+                    .chatBox {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-end;
+                        max-width: 60vw;
+                        margin: 3px 0px 8px 0px;
+                        word-break: keep-all;
+
+                        >div:nth-child(2) {
+                            color: #fff;
+                            font-size: 12px;
+                            margin-bottom: 18px;
+                        }
+
+                        >div:nth-child(3) {
+                            padding: 7px 10px 7px 10px;
+                            background-color: #fff;
+                            margin-left: -3px;
+                            border-radius: 7px;
+                            text-align: left;
+                        }
+
+                        >div:nth-child(4) {
+                            white-space: nowrap;
+                            font-size: x-small;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+
+            .answerItemLayout {
+                width: 100%;
+                background-color: #fff;
+                padding-bottom: 10px;
+                display: flex;
+                flex-direction: column;
+
+                .answerChatBox {
+                    display: flex;
+                    width: 100%;
+                    color: #969696;
+                    font-size: 22px;
+                    border-bottom: 1px solid #eee;
+                    margin-bottom: 25px;
+
+                    >div:nth-child(1) {
+                        display: flex;
+                        flex: 1;
+                        padding: 10px;
+                        box-sizing: border-box;
+                    }
+
+                    >div:nth-child(2) {
+                        padding: 10px;
+                    }
+                }
+
+                .answerBox {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 80px;
+                    text-align: center;
+                    box-shadow: 2px 2px 0px #ededed;
+                    border: 1px solid #ededed;
+                    margin: 0px 20px 15px 20px;
+                    padding: 15px;
+                    border-radius: 20px;
+                    word-break: keep-all;
+                    cursor: pointer;
+                }
+
+                .answerBox:hover {
+                    background-color: #FEEC34;
+                    /* 마우스 호버 시 배경색 파란색으로 변경 */
+                }
+            }
+        }
+
+        .resultList {
+            flex-direction: column;
+            height: 100%;
+            overflow: scroll;
+            scrollbar-width: none;
+
+            .resultItemLayout {
+                display: flex;
+                flex: 1;
+                margin: 10px 15px 5px 15px;
+
+                .resultProfileImg {
+                    display: flex;
+                    flex: 0 0 40px;
+                    flex-direction: column;
+                    width: 40px;
+                    height: 40px;
+                    background-image: url('../../../assets/images/jungho.png');
+                    background-size: cover;
+                    border-radius: 15px;
+                    margin-right: 5px;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .resultChatListLayout {
+                .resultChatBox {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-end;
+                    margin: 3px 3px 8px 0px;
+
+                    >div:nth-child(1) {
+                        color: #fff;
+                        font-size: 12px;
+                        margin-bottom: 18px;
+                    }
+
+                    >div:nth-child(2) {
+                        padding: 7px 10px 7px 10px;
+                        background-color: #fff;
+                        margin-left: -3px;
+                        border-radius: 7px;
+                        max-height: 100%;
+                    }
+
+                    >div:nth-child(3) {
+                        align-items: start;
+                        font-size: x-small;
+                        margin-left: 5px;
+                        white-space: nowrap;
+                    }
+                }
+            }
+
+            .questionList::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+    }
+}
